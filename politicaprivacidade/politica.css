@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow: auto;
+}
+
+/* Estilos aplicados apenas à section.politica */
+
+.politica {
+  max-width: 900px;
+  margin: 120px auto 40px; /* espaço extra para não encostar no header */
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.politica h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #2f2f2f;
+  padding-bottom: 10px;
+  color: #292929;
+}
+
+.politica h2 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #292929;
+}
+
+.politica p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.politica strong {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .politica {
+    margin: 140px 15px 40px;
+    padding: 15px;
+  }
+
+  .politica h1 {
+    font-size: 1.6rem;
+  }
+
+  .politica h2 {
+    font-size: 1.1rem;
+  }
+
+  .politica p {
+    font-size: 0.95rem;
+  }
+}
+
+
