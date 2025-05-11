@@ -1,0 +1,78 @@
+.consultor-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  
+  .consultor-content {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .consultor-imagem img {
+    width: 300px;
+    border-radius: 50%;
+  }
+  
+  .consultor-texto {
+    max-width: 500px;
+  }
+  
+  .consultor-texto h2 {
+    font-size: 28px;
+    color: #ec6f15;
+    margin-bottom: 15px;
+  }
+  
+  .consultor-texto p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .btn-consulta {
+    background: linear-gradient(to right, #e55500, #ff8c42);
+    color: white;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-consulta:hover {
+    background: #995200;
+  }
+
+  @media (max-width: 768px) {
+    .consultor-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .consultor-imagem img {
+      width: 200px;
+    }
+  
+    .consultor-texto {
+      max-width: 100%;
+    }
+  
+    .consultor-texto h2 {
+      font-size: 22px;
+    }
+  
+    .consultor-texto p {
+      font-size: 15px;
+    }
+  
+    .btn-consulta {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  

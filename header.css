@@ -1,0 +1,105 @@
+
+header {
+    background: #ec6f15;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0; /* ← ESSENCIAL */
+    z-index: 1000;
+}
+.logo {
+    height: 60px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #fdd5adc5;
+}
+.header-btn {
+    background: #ffffff;
+    color: #ec6f15;
+    border: none;
+    padding: 18px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    gap: 6px;
+}
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+
+
+@media (max-width: 800px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #ff7213e5;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    nav.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .hero-img {
+    order: 2;
+    margin-top: 20px;
+  }
+  .hero-text {
+    order: 1;
+  }
+  .hero-img img {
+    max-width: 200px;
+  }
+  header { 
+    position: fixed;
+    width: 100%;
+  }
+}
+
+
+
+
